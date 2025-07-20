@@ -1,7 +1,13 @@
 
 rate = 0.21
 while True:
-    mode = int(input('台幣換算日幣請按0，日幣換算台幣請按1，結束請按9:'))
+    mode = input('台幣換算日幣請按0，日幣換算台幣請按1，結束請按9:')
+
+    if mode.isdigit():
+        mode = int(mode)
+    else:
+        print('請輸入正確文字:')
+        continue
 
     if mode == 9:
         print('掰')
