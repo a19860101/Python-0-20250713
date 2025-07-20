@@ -33,4 +33,12 @@ print(' hello '.rstrip())
 # print(s.split())
 # print(s.split('h'))
 
+# isalpha()
+# print('哈囉'.isalpha())
+# isdecimal()
+# print('0.1010101'.isdecimal())
+# isdigit()
+print('12.3'.isdigit())
+# isnumeric()
 
+print('１'.isnumeric())
