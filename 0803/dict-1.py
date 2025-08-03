@@ -46,4 +46,6 @@ products = [
 
 for product in products:
     print(product['name'])
-    print(product['color'])
+    color_str = ','.join(product['color'])
+    print(f'顏色:{color_str}')
+    print('-------------------------------------')
