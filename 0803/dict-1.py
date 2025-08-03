@@ -48,4 +48,7 @@ for product in products:
     print(product['name'])
     color_str = ','.join(product['color'])
     print(f'顏色:{color_str}')
+
+    for i in range(len(product['size'])):
+        print(f'{product['size'][i]}:{product['price'][i]}')
     print('-------------------------------------')
