@@ -35,14 +35,47 @@ d = {
 # print(d.values())
 # print(d.items())
 
-for i in d.keys():
-    print(i)
+# for i in d.keys():
+#     print(i)
+#
+# for i in d.values():
+#     print(i)
+#
+# for k,v in d.items():
+#     print(f'{k}:{v}')
+#
+# for i in d:
+#     print(i)
 
-for i in d.values():
-    print(i)
+# 新增或更新
+# d['n'] = 456
+# print(d)
 
-for k,v in d.items():
-    print(f'{k}:{v}')
+# d['skill'] = 'Python'
+# print(d)
 
-for i in d:
-    print(i)
+# 新增或修改資料
+# d.update({'name':'Mary'})
+# d.update({'age':'20'})
+# print(d)
+
+# 新增資料，但資料若存在既維持預設
+d.setdefault('name','Max')
+d.setdefault('age','20')
+print(d)
+
+# 移除指定項目
+d.pop('n')
+# print(d)
+
+# 移除最後一項
+d.popitem()
+# print(d)
+
+# 移除指定項目
+del d['name']
+# print(d)
+
+# 清空
+d.clear()
+# print(d)
