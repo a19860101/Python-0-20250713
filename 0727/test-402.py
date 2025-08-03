@@ -9,3 +9,12 @@
 #
 # 輸出說明
 # n個數值中的最小值
+
+r=[]
+while True:
+    n = int(input())
+    if n==9999:
+        break
+    r.append(n)
+
+print(min(r))
