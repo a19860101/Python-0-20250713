@@ -1,4 +1,3 @@
-
 mode = input('台幣換算日幣請按0，日幣換算台幣請按1:')
 
 dollar = float(input('請輸入金額'))
@@ -11,6 +10,5 @@ if mode == '0':
 else:
     result = dollar * rate
     print(f'{dollar}日幣大約為{result}台幣')
-
 
 
