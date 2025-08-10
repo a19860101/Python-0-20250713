@@ -27,9 +27,10 @@ class Designer2(User):
     def show(self):
         print(f'姓名:{self.name}')
         print(f'職稱:{self.job}')
-
-d1 = Designer('AA','28900','平面設計師')
+#
+# d1 = Designer('AA','28900','平面設計師')
+d1 = Designer('AA','28900')
 d1.show()
-
-d2 = Designer2('BB','28900','平面設計師')
-d2.show()
+#
+# d2 = Designer2('BB','28900','平面設計師')
+# d2.show()
