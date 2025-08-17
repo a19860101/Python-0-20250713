@@ -30,5 +30,14 @@ from datetime import datetime, timezone, timedelta
 # tz = dt.timezone(dt.timedelta(hours=0))
 # print(dt.datetime.now(tz))
 
-tz = timezone(timedelta(hours=0))
-print(datetime.now(tz))
+# tz = timezone(timedelta(hours=0))
+# print(datetime.now(tz))
+t = datetime.today()
+
+tomorrow = t + timedelta(days=1)
+yesterday = t - timedelta(days=1)
+nextweek = t + timedelta(weeks=1)
+
+print(tomorrow)
+print(yesterday)
+print(nextweek)
