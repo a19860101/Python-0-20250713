@@ -18,5 +18,8 @@ data = pd.DataFrame(users)
 
 # print(data[data['name'].str.contains('A|a')])
 
-condition = (data['name'].str.contains('An'))
+condition = (data['age'] >= 30) & (data['gender'].str.contains('A&n'))
+
+# condition = (data['name'].str.contains('A') & data['name'].str.contains('n'))
+
 print(data[condition])
