@@ -50,7 +50,7 @@ def compute(a, b, c):
     if q < 0:
         print('Your equation has no root.')
     elif q == 0:
-        print(-b / 2 * a)
+        print(-b / (2 * a))
     else:
         a1 = (-b + (q ** 0.5))/(2*a)
         a2 = (-b - (q ** 0.5))/(2*a)

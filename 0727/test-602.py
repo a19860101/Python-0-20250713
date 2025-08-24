@@ -38,5 +38,5 @@ for i in range(5):
     elif a=='A':
         r.append(1)
     else:
-        r.append(a)
+        r.append(int(a))
 print(sum(r))
