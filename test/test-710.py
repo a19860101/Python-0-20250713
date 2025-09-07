@@ -17,3 +17,25 @@
 # Key: end
 # Search key: 246-8246-82
 # True
+# method 1
+d={}
+while True:
+    k = input('Key: ')
+    if k == 'end':
+        break
+    v = input('Value: ')
+    d[k]=v
+s = input('Search key: ')
+print(s in d)
+
+
+# method2
+d = {}
+while True:
+    key = input("Key: ")
+    if key == 'end':
+        break
+    value = input("Value: ")
+    d.update({key: value})
+v = input('Search key: ')
+print(v in d)
