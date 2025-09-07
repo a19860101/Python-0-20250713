@@ -4,7 +4,7 @@ import pandas as pd
 plt.rc('font',family='Microsoft Jhenghei')
 
 data = pd.read_csv('./travel.csv')
-
+print(data)
 data111 = data.iloc[3][2:-1]
 
 dataX = data111.index.tolist()
