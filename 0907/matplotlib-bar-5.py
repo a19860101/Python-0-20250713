@@ -19,9 +19,9 @@ print(len(data_109))
 # plt.bar([1.1,2.1,3.1,4.1,5.1,6.1,7.1],data_111, width=.2, align='edge')
 
 w = .3
-plt.bar([i-w for i in range(1, len(label) + 1)],data_109, width=w)
-plt.bar([i for i in range(1, len(label) + 1)],data_110, width=w)
-plt.bar([i+w/2 for i in range(1, len(label) + 1)],data_111, width=w, align='edge')
+plt.bar([i-w for i in range(1, len(label) + 1)],data_109, width=w, color='red')
+plt.bar([i for i in range(1, len(label) + 1)],data_110, width=w, color='blue')
+plt.bar([i+w/2 for i in range(1, len(label) + 1)],data_111, width=w, align='edge', color='green')
 
 plt.xticks(range(1,len(label) + 1),label)
 
