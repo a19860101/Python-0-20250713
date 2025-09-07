@@ -7,7 +7,13 @@ datas = pd.read_json('./TransService.json')
 # print(datas['animal_kind'].value_counts())
 # print(datas['animal_Variety'].value_counts(ascending=True))
 
-animal_kind = datas['animal_kind'].value_counts()
+animal_kind = datas['animal_kind'].value_counts(ascending=False)
+
+print(animal_kind.index)
+
+# q = list(animal_kind.index)
+# q.reverse()
+# print(q)
 
 # print(datas['shelter_name'].nunique())
 # print(datas['animal_kind'].nunique())
@@ -17,7 +23,7 @@ animal_kind = datas['animal_kind'].value_counts()
 
 # plt.show()
 
-mydata = datas[datas['shelter_address'].str.contains('臺北|新北')]
-print(mydata['shelter_address'].nunique())
-print(mydata['shelter_address'].value_counts())
+# mydata = datas[datas['shelter_address'].str.contains('臺北|新北')]
+# print(mydata['shelter_address'].nunique())
+# print(mydata['shelter_address'].value_counts())
 
