@@ -11,23 +11,18 @@ w.setStyleSheet('''
     font-weight: bold;
 ''')
 #加入label
-label1 = QtWidgets.QLabel(w)
-label1.setText('hello')
-label1.move(50,50)
+label = QtWidgets.QLabel(w)
+label.setText('hello')
+label.move(50,50)
 
 ## Line Edit 輸入文字框
 label_input = QtWidgets.QLineEdit(w)
 label_input.move(50,100)
-label_input.setStyleSheet('''
-    color: red;
-''')
 
 # Combo Box 下拉式
 sel = QtWidgets.QComboBox(w)
-# sel.addItem('test 1')
-# sel.addItem('test 2')
-# sel.addItem('test 3')
 sel.addItems(['test 1','test 2', 'test 3'])
+sel.move(50,150)
 
 # Text Edit 長文字輸入
 textarea = QtWidgets.QTextEdit(w)
@@ -37,12 +32,14 @@ textarea.move(50,200)
 btn = QtWidgets.QPushButton(w)
 btn.setText('按我按我!!')
 btn.move(300,300)
-btn.setStyleSheet('''
-    background: red;
-    color: yellow;
-    padding: 8px;
-    border-radius: 8px;
-''')
+
+def go():
+    text = label_input.text()
+    sel_text = sel.currentText()
+    textarea.setText(f'{text} / {sel_text}')
+
+btn.clicked.connect(go)
+
 
 
 w.show()
