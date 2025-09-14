@@ -60,6 +60,7 @@ def image_resize(path):
             os.makedirs('output', exist_ok=True)
 
             # 測試路徑
+            # 取得檔案位置的絕對路徑
             path = os.path.dirname(os.path.abspath(__file__))
             # path = os.path.dirname(__file__)
 
